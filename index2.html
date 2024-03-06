@@ -1,1 +1,1501 @@
+<html>
+<head></head>
+    <p hidden><audio controls autoplay>
+     <source src="https://a6Q" type="audio/mpeg" />
 
+     <source src="" type="audio/mpeg" />
+
+     Your browser does not support the audio element.
+
+     </audio></p>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="/assets/favicon.ico"
+            type="image/x-icon" />
+        <!-- This will become a melon link banner! -->
+        <span class="melonLink" data-melon-link-format="400x40"></span>
+        <!-- This is the melonlink banner script and should go in the <head> or near the end of your page! -->
+        <script src="scripts/melonLinks.js"></script>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript">
+            function tb8_makeArray(n) {
+                this.length = n;
+                return this.length;
+            }
+            tb8_messages = new tb8_makeArray(3);
+            tb8_messages[0] = "WHERE IS IT...?";
+            tb8_messages[1] = "ASK AROUND..";
+            tb8_messages[2] = "GOSSIP.";
+            tb8_rptType = "infinite";
+            tb8_rptNbr = 5;
+            tb8_speed = 100;
+            tb8_delay = 2000;
+            var tb8_counter = 1;
+            var tb8_currMsg = 0;
+            var tb8_tekst = "";
+            var tb8_i = 0;
+            var tb8_TID = null;
+            function tb8_pisi() {
+                tb8_tekst =
+                    tb8_tekst +
+                    tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i + 1);
+                document.title = tb8_tekst;
+                tb8_sp = tb8_speed;
+                tb8_i++;
+                if (tb8_i == tb8_messages[tb8_currMsg].length) {
+                    tb8_currMsg++;
+                    tb8_i = 0;
+                    tb8_tekst = "";
+                    tb8_sp = tb8_delay;
+                }
+                if (tb8_currMsg == tb8_messages.length) {
+                    if (tb8_rptType == "finite" && tb8_counter == tb8_rptNbr) {
+                        clearTimeout(tb8_TID);
+                        return;
+                    }
+                    tb8_counter++;
+                    tb8_currMsg = 0;
+                }
+                tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
+            }
+            tb8_pisi();
+        </script>
+        <title>WHO KNOWS...?</title>
+
+        <!-- Discord/Twitter open graph metadata. -->
+        <meta property="og:title" content="𝘨 𝘰 𝘴 𝘴 𝘪 𝘱" />
+        <meta property="og:site_name" content="Yourspace" />
+        <meta property="og:url" content="https://noah.wf" />
+        <meta name="theme-color" content="#6bd3bd" />
+        <meta property="og:type" content="photo" />
+
+        <meta
+            property="og:image"
+            content="https://theabsoluterealm.com/main/assets/origlogo.gif" />
+        <meta
+            property="og:description"
+            content="Your corner or the internet!" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <script>
+            if (/headless/i.test(window.navigator.userAgent)) {
+                window.location.replace("/thumbnail/");
+            }
+        </script>
+
+        <style>
+            @font-face {
+                font-family: geo;
+                src: url(fonts/GeosansLight.ttf);
+            }
+            @font-face {
+                font-family: geo-oblique;
+                src: url(fonts/GeosansLight-Oblique.ttf);
+            }
+
+            @font-face {
+                font-family: apple;
+                src: url(fonts/EarthMomma.ttf);
+            }
+            ::selection {
+                background-color: #ffffff25;
+            }
+
+            body {
+                font-family: geo;
+                font-size: 28px;
+                color: white;
+                background-color: #05030f;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                cursor: url("https://theabsoluterealm.com/assets/cursor/cursor.png"),
+                    auto;
+            }
+
+            div:target {
+                display: block !important;
+            }
+
+            a,
+            a:link,
+            a:visited,
+            a:active {
+                color: white;
+                text-decoration: none;
+                cursor: url("https://theabsoluterealm.com/assets/cursor/cursor.png"),
+                    auto;
+            }
+            p {
+                margin: 0;
+            }
+
+            input[type="range"] {
+                transform: rotate(270deg);
+                -webkit-appearance: none;
+                position: fixed;
+                right: 0px;
+                bottom: 140px;
+                filter: drop-shadow(0px 0px 5px #ffffff);
+                opacity: 0.75;
+                z-index: 6;
+            }
+            input[type="range"]:focus {
+                outline: none;
+            }
+            input[type="range"]::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 5px;
+                cursor: url("/assets/cursor/pointer.png"), auto;
+
+                box-shadow: 0px 0px 0px #000000;
+                background: #ffffff1c;
+                border-radius: 1px;
+                border: 0px solid #000000;
+            }
+            input[type="range"]::-webkit-slider-thumb {
+                box-shadow: 0px 0px 0px #000000;
+                border: 1px solid #ffffff1c;
+                height: 18px;
+                width: 18px;
+                border-radius: 50px;
+                background: #fff;
+                cursor: url("/assets/cursor/pointer.png"), auto;
+                -webkit-appearance: none;
+                margin-top: -7px;
+            }
+            input[type="range"]:focus::-webkit-slider-runnable-track {
+                background: #ffffff1c;
+            }
+            input[type="range"]::-moz-range-track {
+                width: 100%;
+                height: 5px;
+                cursor: url("/assets/cursor/pointer.png"), auto;
+                background: #ffffff1c;
+                border-radius: 1px;
+            }
+            input[type="range"]::-moz-range-thumb {
+                border: 1px solid #ffffff1c;
+                height: 18px;
+                width: 18px;
+                border-radius: 50px;
+                background: #fff;
+                cursor: url("/assets/cursor/pointer.png"), auto;
+            }
+            input[type="range"]::-ms-track {
+                width: 100%;
+                height: 5px;
+                cursor: url("/assets/cursor/pointer.png"), auto;
+
+                background: transparent;
+                border-color: transparent;
+                color: transparent;
+            }
+            input[type="range"]::-ms-fill-lower {
+                background: #ffffff1c;
+
+                border-radius: 2px;
+            }
+            input[type="range"]::-ms-fill-upper {
+                background: #ffffff1c;
+
+                border-radius: 2px;
+            }
+            input[type="range"]::-ms-thumb {
+                margin-top: 1px;
+
+                height: 18px;
+                width: 18px;
+                border-radius: 50px;
+                background: #fff;
+                cursor: url("/assets/cursor/pointer.png"), auto;
+            }
+            input[type="range"]:focus::-ms-fill-lower {
+                background: #ffffff1c;
+            }
+            input[type="range"]:focus::-ms-fill-upper {
+                background: #ffffff1c;
+            }
+
+            hr {
+                background-color: #fff;
+            }
+
+            .centerPreview {
+                position: fixed;
+                top: 40%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 100%;
+                text-align: center;
+                filter: drop-shadow(0px 0px 10px white);
+            }
+            .wrapper {
+                z-index: -5;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                position: absolute;
+                background: linear-gradient(
+                    45deg,
+                    #ff2400,
+                    #de0d0d,
+                    #fe00b1,
+                    #ccb800,
+                    #2bc235,
+                    #00c3ff,
+                    #9900ff,
+                    #dd00f3,
+                    #de0d0d,
+                    #ff2400
+                );
+                background-size: 3500% 1000%;
+                -webkit-animation: rainbow 30s linear alternate infinite;
+                -z-animation: rainbow 30s linear alternate infinite;
+                -o-animation: rainbow 30s linear alternate infinite;
+                animation: rainbow 30s linear alternate infinite;
+                opacity: 0.85;
+            }
+
+            .front {
+                background-color: rgba(0, 0, 0, 0.85);
+                position: fixed;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+            }
+
+            .fullscreen-bg {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                overflow: hidden;
+                z-index: -4;
+                background-blend-mode: screen;
+                mix-blend-mode: screen;
+                filter: brightness(1.5) blur(2.5px);
+
+                animation: fillIn 2.5s linear;
+            }
+
+            .label-text {
+                background-color: transparent;
+                text-align: left;
+                white-space: nowrap;
+                z-index: 3;
+                display: inline-block;
+            }
+
+            .typewriter p {
+                position: relative;
+                color: white;
+                font-family: geo;
+                overflow: hidden; /* Ensures the content is not revealed until the animation */
+                border-right: 2px solid white; /* The typwriter cursor */
+                font-size: calc(20px + 1.25vw);
+                margin: 0 auto; /* Gives that scrolling effect as the typing happens. Add "auto" for scroll. */
+                line-height: normal;
+                animation: typing 2s steps(30, end),
+                    blink-caret 1s step-end infinite;
+            }
+
+            .phrasecontainer {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                overflow: hidden;
+                filter: drop-shadow(0px 0px 6px white);
+                z-index: 2;
+            }
+
+            .phrasecontainer:hover {
+                animation: breathe 0.4s infinite alternate;
+            }
+
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+            .cardContainer {
+                pointer-events: none;
+                position: fixed;
+                top: 10%;
+                right: 5%;
+                background-color: #ffffff1c;
+                padding: 15px;
+                border-radius: 5px;
+                filter: drop-shadow(0px 0px 5px #ffffff);
+                width: 400px;
+            }
+
+            <div
+                class="particles"
+                id="particles-js"
+                > <canvas
+                class="particles-js-canvas-el"
+                style="width: 100vw; height: 100vh;"
+                width="1168"
+                height="832"
+                > </canvas
+                > </div
+                > .particles {
+                position: fixed;
+                z-index: 0;
+                filter: blur(2px) drop-shadow(0px 0px 5px #ffffff);
+                transform: scaleX(-1);
+            }
+            .vButton {
+                position: fixed;
+                z-index: 6;
+                right: 50px;
+                bottom: 40px;
+                filter: drop-shadow(0px 0px 5px #ffffff);
+            }
+            .vButton:hover {
+                animation: breathe 0.4s infinite alternate;
+                cursor: url("/assets/cursor/pointer.png"), auto;
+            }
+
+            .page1 {
+                position: absolute;
+                z-index: 5;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 100%;
+                height: 100%;
+                transition: ease-in-out 1s;
+            }
+            .page2 {
+                position: absolute;
+                z-index: 5;
+                top: 50%;
+                left: 150%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 100%;
+                height: 100%;
+                transition: ease-in-out 1s;
+            }
+
+            #settingsIcon {
+                position: fixed;
+                right: 100px;
+                bottom: 40px;
+                filter: drop-shadow(0px 0px 5px #ffffff);
+                cursor: url("https://theabsoluterealm.com/assets/gear.png"),
+                    auto;
+                z-index: 6;
+            }
+            #settingsIcon:hover {
+                animation: breathe 0.4s infinite alternate;
+            }
+
+            #sideArrow {
+                cursor: url("/assets/cursor/pointer.png"), auto;
+                position: fixed;
+                top: 50%;
+                right: 20px;
+                transform: translateX(-50%) translateY(-50%);
+                filter: drop-shadow(0px 0px 5px #ffffff);
+                z-index: 6;
+            }
+            #sideArrow:hover {
+                animation: breathe 0.4s infinite alternate;
+            }
+
+            #logo {
+                width: 250px;
+                position: fixed;
+                left: 190px;
+                bottom: -10px;
+                transform: translateX(-50%) translateY(-50%);
+                filter: drop-shadow(0px 0px 5px #ffffff);
+                pointer-events: none;
+            }
+
+            #thePreview {
+                position: fixed;
+                z-index: 100;
+                height: 100%;
+                width: 100%;
+                display: none;
+            }
+            #previewBk {
+                position: fixed;
+                z-index: -5;
+                background-image: url("assets/tempImg3.png");
+                background-position: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            #ocean {
+                animation: scaleIn 10s ease-in-out;
+            }
+
+            #previewImg {
+                width: 75%;
+            }
+
+            #mobilephrase {
+                display: none;
+            }
+            #phrase {
+                display: block;
+            }
+
+            #foundtextWrapper {
+                width: 275px;
+            }
+
+            #darken {
+                background-color: hsla(0, 0%, 0%, 0.2);
+                z-index: -1;
+            }
+            #fade {
+                background-color: white;
+                pointer-events: none;
+                animation: intoThe 5s ease-in-out;
+                opacity: 0;
+                z-index: 100;
+            }
+
+            #fade2 {
+                background-color: white;
+                z-index: 100;
+                display: none;
+                opacity: 0;
+            }
+
+            #light {
+                background-color: white;
+                z-index: -1;
+                opacity: 0%;
+            }
+
+            #moosic {
+                position: fixed;
+                display: table;
+                filter: drop-shadow(0px 0px 5px white);
+                background-color: #ffffff1c;
+                border-radius: 5px;
+                padding: 10px 20px 10px 100px;
+                transition: 2s ease-in-out;
+                transform: translate(-2600px, 75px);
+                z-index: 6;
+            }
+
+            #artist {
+                font-size: 15px;
+            }
+            #note {
+                width: 30px;
+                vertical-align: -4px;
+                filter: invert(1);
+
+                position: absolute;
+                left: 64px;
+            }
+
+            #card {
+                height: 175px;
+                position: absolute;
+                bottom: -35%;
+                left: 70%;
+                transform: translateX(-50%) translateY(-50%);
+                position: absolute;
+            }
+
+            #comment {
+                font-size: 15px;
+            }
+            #stickersFound {
+                position: absolute;
+                font-size: 17.5px;
+                top: 105px;
+                left: 50px;
+            }
+
+            #foundText {
+                font-size: 25px;
+            }
+
+            #info {
+                pointer-events: none;
+                text-align: center;
+                width: 810px;
+                position: fixed;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                font-size: 14px;
+                /* opacity: 0.75; */
+                filter: drop-shadow(0px 0px 6px white);
+            }
+            #audioInfo {
+                pointer-events: none;
+                text-align: center;
+                width: 810px;
+                position: fixed;
+                top: 94%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                font-size: 14px;
+                opacity: 0.5;
+            }
+            #tempImg {
+                position: fixed;
+                z-index: -5;
+                background-image: url("assets/tempImg.png");
+
+                width: 100%;
+                height: 100%;
+            }
+            #voicesWrapper {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                pointer-events: none;
+                filter: blur(2px) drop-shadow(0px 0px 6px white);
+                opacity: 0.25;
+                font-size: 25px;
+                text-align: left;
+            }
+
+            #voicesWrapper div {
+                position: absolute;
+                pointer-events: none;
+                width: 1000px;
+                font-family: geo-oblique;
+                opacity: 0;
+            }
+
+            @keyframes textInOut {
+                0% {
+                    opacity: 0;
+                    transform: translate(0px, 0px);
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    transform: translate(150px, 0px);
+                }
+            }
+
+            @keyframes breathe {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0.35;
+                }
+            }
+
+            /* The typing effect */
+            @keyframes typing {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 99%;
+                }
+            }
+
+            /* The typewriter cursor effect */
+            @keyframes blink-caret {
+                from,
+                to {
+                    border-color: transparent;
+                }
+                50% {
+                    border-color: white;
+                }
+            }
+
+            /* Infinite */
+            @keyframes backgroundScroll {
+                0% {
+                    background-position: 0px 0px;
+                    filter: opacity(100%) blur(1px);
+                }
+                50% {
+                    background-position: 0px -234px;
+                    filter: opacity(50%) blur(1px);
+                }
+                100% {
+                    background-position: 0px -468px;
+                    filter: opacity(100%) blur(1px);
+                }
+            }
+
+            /* Infinite  */
+            @keyframes backgroundScroll2 {
+                0% {
+                    background-position: 0px 0px;
+                    filter: opacity(100%) blur(1px);
+                }
+                50% {
+                    background-position: 0px -234px;
+                    filter: opacity(100%) blur(1px);
+                }
+                100% {
+                    background-position: 0px -468px;
+                    filter: opacity(100%) blur(1px);
+                }
+            }
+
+            @keyframes intoThe {
+                from {
+                    opacity: 100%;
+                }
+                to {
+                    opacity: 0%;
+                }
+            }
+            @keyframes fillIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes scaleIn {
+                from {
+                    transform: scale(1.25);
+                }
+                to {
+                    transform: scale(1);
+                }
+            }
+
+            @-webkit-keyframes rainbow {
+                0% {
+                    background-position: 0% 82%;
+                }
+                50% {
+                    background-position: 100% 19%;
+                }
+                100% {
+                    background-position: 0% 82%;
+                }
+            }
+            @-moz-keyframes rainbow {
+                0% {
+                    background-position: 0% 82%;
+                }
+                50% {
+                    background-position: 100% 19%;
+                }
+                100% {
+                    background-position: 0% 82%;
+                }
+            }
+            @-o-keyframes rainbow {
+                0% {
+                    background-position: 0% 82%;
+                }
+                50% {
+                    background-position: 100% 19%;
+                }
+                100% {
+                    background-position: 0% 82%;
+                }
+            }
+            @keyframes rainbow {
+                0% {
+                    background-position: 0% 82%;
+                }
+                50% {
+                    background-position: 100% 19%;
+                }
+                100% {
+                    background-position: 0% 82%;
+                }
+            }
+
+            @keyframes moosicin {
+                from {
+                    transform: translate(-2500px, 75px);
+                }
+                to {
+                    transform: translate(-6px, 75px);
+                }
+            }
+            @keyframes moosicout {
+                from {
+                    transform: translate(-6px, 75px);
+                }
+                to {
+                    transform: translate(-2500px, 75px);
+                }
+            }
+            @keyframes wiggle {
+                from {
+                    transform: rotate(10deg);
+                }
+                to {
+                    transform: rotate(-10deg);
+                }
+            }
+
+            @media (orientation: landscape) {
+                body {
+                    letter-spacing: 2px;
+                }
+
+                .fullscreen-bg {
+                    display: block;
+                }
+                #darken {
+                    box-shadow: 0 0 200px #ffffff8c inset;
+                }
+            }
+
+            @media only screen and (max-width: 1650px) {
+                #logo {
+                    bottom: 70px;
+                    left: 50%;
+                }
+            }
+            @media only screen and (max-width: 920px) {
+                #info {
+                    width: 510px;
+                }
+            }
+
+            @media (orientation: portrait) /* Sincerest apologies to mobile users,
+                but this must be done. */ {
+                body {
+                    font-size: 15px;
+                }
+
+                input[type="range"] {
+                    display: none;
+                }
+
+                .phrasecontainer {
+                    display: none;
+                }
+                .vButton {
+                    display: none;
+                }
+
+                .cardContainer {
+                    width: 300px;
+                    right: 15%;
+                    top: 7%;
+                    width: 250px;
+                }
+
+                .waveContainer {
+                    display: none;
+                }
+
+                .wrapper {
+                    background-size: 100% 2000%;
+                }
+
+                .typewriter p {
+                    font-size: calc(13px + 1.5vw);
+                }
+
+                .fullscreen-bg {
+                    filter: brightness(1.5) blur(1.5px);
+                }
+                .page1 {
+                    z-index: initial;
+                }
+
+                #mobilephrase {
+                    display: block;
+                }
+                #phrase {
+                    display: none;
+                }
+                #foundtextWrapper {
+                    width: 175px;
+                }
+
+                #moosic {
+                    display: none;
+                    transform: translate(-400px, 75px);
+                }
+                #note {
+                    width: 21px;
+                    vertical-align: -2px;
+                    filter: invert(1);
+                    padding-right: 5px;
+                }
+                #card {
+                    height: 105px;
+                    display: block;
+                    margin: 15px auto;
+                }
+                #comment {
+                    font-size: 12.5px;
+                }
+                #stickersFound {
+                    top: 75px;
+                    font-size: 15px;
+                }
+                #foundText {
+                    font-size: 15px;
+                }
+
+                #logo {
+                    width: 150px;
+                    bottom: 100px;
+                    left: 50%;
+                }
+                #info {
+                    width: 300px;
+                    font-size: 13px;
+                }
+                #audioInfo {
+                    display: none;
+                }
+                #tempImg {
+                    display: none;
+                }
+                #sideArrow {
+                    display: none;
+                }
+                #settingsIcon {
+                    display: none;
+                }
+            }
+        </style>
+        <style data-emotion="cosmos-global-global" data-s=""></style>
+        <style data-emotion="cosmos-global-global" data-s=""></style>
+        <style data-emotion="cosmos-global-global" data-s=""></style>
+    </head>
+    <body>
+        <div id="thegradient" class="wrapper"></div>
+
+        <!-- the avg non-js user -->
+        <noscript
+            ><style>
+                .typewriter p {
+                    text-align: center;
+                }
+                .phrasecontainer,
+                .vButton,
+                #settingsIcon,
+                #volumeControl,
+                #sideArrow {
+                    display: none !important;
+                }
+            </style>
+            <div
+                style="
+                    filter: drop-shadow(0px 0px 5px #ffffff);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    z-index: 1000;
+                "
+                class="label-text">
+                <div class="typewriter">
+                    <a href="/main"><p>welcome to the absolute realm!</p></a>
+                </div>
+                <div style="text-align: center">
+                    <a href="/main"
+                        ><p>but why no javascript..? you're missin' out!</p></a
+                    >
+                </div>
+            </div></noscript
+        >
+
+        <!-- transitions / post-processings -->
+        <div id="fade2" class="overlay no-select"></div>
+        <div id="fade" class="overlay no-select"></div>
+        <div id="darken" class="overlay no-select"></div>
+
+        <!-- Interactibles -->
+
+      
+        <img
+            class="vButton"
+            src="https://theabsoluterealm.com/assets/musicOff.png"
+            style="display: none"
+            id="volumeButton2"
+            onclick="UnmuteMusic()"
+            alt="" />
+
+      
+        
+
+        <div style="display: none" class="page2">
+            <a
+                onmouseover="PlaySound('select', 0.5)"
+                onmouseout="StopSound('select')"
+                href="main"
+                ><p>Straight to Main!</p></a
+            >
+        </div>
+
+       
+
+            <div
+                style="
+                    position: fixed;
+                    font-size: 15px;
+                    bottom: 5px;
+                    left: 10px;
+                ">
+                <p id="fpsCounter"></p>
+            </div>
+
+            <!-- the main content -->
+
+            <div class="phrasecontainer" id="phrase">
+                <div class="label-text">
+                    <div class="typewriter">
+                        <a
+                            onmouseover="PlaySound('select', 0.5)"
+                            onmouseout="StopSound('select')"
+                            onclick="transition()"
+                            href="https://onthinice.github.io/winamp/About%20Noah%20Wolf.html"
+                            ><p id="greet" style="">
+                                click here to proceed!
+                            </p></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- information -->
+
+        <em id="info"
+            >~ Gossip ~<br />be less curious in people, & more curious with
+            ideas..</em
+        >
+
+        <!-- music track feature -->
+        <div
+            id="moosic"
+            style="
+                transform: translate(-6px, 75px);
+                transition: none 0s ease 0s;
+                opacity: 0;
+                display: none;
+            ">
+            <img
+                src="https://theabsoluterealm.com/assets/8thnote.png"
+                id="note"
+                alt="eighth note" /><span
+                ><a
+                    id="link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=Tz5Va0QbOyc&list=PLjm8AqDqXtLMhO20cwAcjRIlgtyIRaCdK"
+                    ><em id="title">Redwood Colonnade</em></a
+                ></span
+            ><br />
+            <a id="artistLink" target="_blank" href="http://lifeformed.com"
+                ><em id="artist">Lifeformed</em></a
+            >
+        </div>
+
+        <!-- the main mobile conent -->
+        <div class="phrasecontainer" id="mobilephrase">
+            <div class="label-text">
+                <div class="typewriter">
+                    <a href="main/"
+                        ><p id="greet2" style="">click here to proceed!</p></a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- backgrounds -->
+
+        <div id="voicesWrapper">
+            <div
+                id="text1"
+                style="
+                    left: 497px;
+                    top: 184px;
+                    animation: 7s linear 0s 1 normal none running textInOut;
+                    font-size: 31px;
+                ">
+                keep dreaming..
+            </div>
+            <div
+                id="text2"
+                style="
+                    left: 488px;
+                    top: 682px;
+                    animation: 9s linear 0s 1 normal none running textInOut;
+                    font-size: 32px;
+                ">
+                gossip
+            </div>
+            <div
+                id="text3"
+                style="
+                    left: 705px;
+                    top: 640px;
+                    animation: 8s linear 0s 1 normal none running textInOut;
+                    font-size: 15px;
+                ">
+                hey, listen!
+            </div>
+            <div
+                id="text4"
+                style="
+                    left: 632px;
+                    top: 249px;
+                    animation: 12s linear 0s 1 reverse none running textInOut;
+                    font-size: 29px;
+                ">
+                you're alive..
+            </div>
+            <div
+                id="text7"
+                style="
+                    left: 1033px;
+                    top: 649px;
+                    animation: 11s linear 0s 1 normal none running textInOut;
+                    font-size: 29px;
+                ">
+                truth be told..
+            </div>
+            <div
+                id="text8"
+                style="
+                    left: 861px;
+                    top: 321px;
+                    animation: 14s linear 0s 1 reverse none running textInOut;
+                    font-size: 15px;
+                ">
+                everything's okay..
+            </div>
+            <div
+                id="text9"
+                style="
+                    left: 560px;
+                    top: 220px;
+                    animation: 12s linear 0s 1 normal none running textInOut;
+                    font-size: 30px;
+                ">
+                hey, listen!
+            </div>
+            <div
+                id="text10"
+                style="
+                    left: 156px;
+                    top: 605px;
+                    animation: 14s linear 0s 1 reverse none running textInOut;
+                    font-size: 17px;
+                ">
+                but why..
+            </div>
+        </div>
+        <div class="particles" id="particles-js">
+            <canvas
+                class="particles-js-canvas-el"
+                style="width: 100vw; height: 100vh"
+                width="1160"
+                height="831"></canvas>
+        </div>
+
+        <div class="fullscreen-bg" id="backvid2">
+            <video
+                style="object-fit: fill; width: 100%; height: 100%"
+                id="ocean"
+                loop=""
+                autoplay=""
+                preload="auto"
+                muted=""
+                playsinline=""
+                class="fullscreen-bg__video">
+                <source
+                    preload="auto"
+                    src="https://theabsoluterealm.com/assets/titlescreenplanelow.mp4"
+                    type="video/mp4" />
+            </video>
+        </div>
+
+        <!-- further js stuff -->
+        <script>
+            <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+        </script>
+        <!-- stats.js lib -->
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+        <script>
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+        </script>
+        <script src="pixels.js"></script>
+        <script src="achievementManager.js"></script>
+        <script src="universalScripts/howler.js"></script>
+        <script src="voices.js"></script>
+
+        <audio id="select" src="https://theabsoluterealm.com/sounds/select.ogg">
+            <audio id="click" src="https://theabsoluterealm.com/sounds/clicked.ogg">
+                <script
+                    data-goatcounter="https://theabsoluterealm.goatcounter.com/count"
+                    async=""
+                    src="//gc.zgo.at/count.js"></script>
+
+                <script>
+                    const ref = (elem) => document.querySelector(elem),
+                        rr = (max) =>
+                            Math.floor(Math.random() * Math.floor(max));
+                    var Dw = window.innerWidth,
+                        Dh = window.innerHeight,
+                        volume = localStorage["singularityVolume"],
+                        i = 0,
+                        j = 0,
+                        space = " ",
+                        speed = "150",
+                        pos = 0,
+                        msg = "⭐ 𝚃𝚑𝚎 𝚊𝚋𝚜𝚘𝚕𝚞𝚝𝚎 𝚛𝚎𝚊𝚕𝚖 : ~ 𝘴𝘪𝘯𝘨𝘶𝘭𝘢𝘳𝘪𝘵𝘺 ~ ",
+                        greetings = [
+                            "hello there!",
+                            "hey there!",
+                            "hey hey!",
+                            "greetings traveller!",
+                            "hi there!!",
+                            "hello there fellow netizen!",
+                            "yo, what's up?",
+                            "greetings User.",
+                            "hai there!!",
+                            "hai!! hai!! uwu",
+                            "ah, so you've arrived!",
+                            "yay! i'm so glad to see you!"
+                        ],
+                        stickerNames = [
+                            "#qrfoundshinto",
+                            "#shintocon",
+                            "#qrfoundshintoholiday",
+                            "#ezracon"
+                        ],
+                        secondGreet = "welcome to the absolute realm!",
+                        volumeButton = document.getElementById("volumeButton"),
+                        pageOne = document.querySelector(".page1"),
+                        pageTwo = document.querySelector(".page2"),
+                        volumeButton2 =
+                            document.getElementById("volumeButton2"),
+                        pcGreet = document.getElementById("greet"),
+                        mbGreet = document.getElementById("greet2"),
+                        voicesWrapper =
+                            document.getElementById("voicesWrapper"),
+                        volumeControl =
+                            document.getElementById("volumeControl");
+
+                    let randGreet =
+                        greetings[Math.floor(Math.random() * greetings.length)];
+
+                    const animated = document.querySelector("#fade");
+
+                    /*
+      animated.onanimationend = () => {
+        console.log("Animation ended");
+      };
+      */
+
+                    if (volume == undefined) {
+                        console.log("hey");
+                        volume = 100;
+                        localStorage["singularityVolume"] = volume;
+                    }
+                    Howler.volume(volume / 100);
+                    volumeControl.value = volume;
+
+                    volumeControl.addEventListener("change", function (e) {
+                        Howler.volume(e.currentTarget.value / 100);
+                        localStorage["singularityVolume"] =
+                            e.currentTarget.value;
+                    });
+
+                    // CHECK IF YOU FOUND STICKER
+                    if (stickerNames.includes(window.location.hash)) {
+                        StickerCheck(window.location.hash.slice(1));
+                    }
+
+                    if (Dh > Dw) {
+                        //portrait
+                        info.innerHTML =
+                            "~ singularity ~<br>the gateway to a world of fun and cool things within my mind. varying around gaming, secrets, art, programming, and more.";
+                    } else if (Dh < Dw) {
+                        //landscape
+                        info.innerHTML =
+                            "~ singularity ~<br>the gateway to a world of fun and cool things within my mind. varying around gaming, secrets, art, programming, and more. the best experience is featured on desktop with sounds enabled.";
+                    }
+
+                    function PageTwo() {
+                        pageOne.style.left = "-50%";
+                        pageTwo.style.left = "50%";
+                        /*
+        animated.onanimationend = () => {
+          console.log("Animation ended");
+        };*/
+                    }
+
+                    function PageOne() {
+                        pageOne.style.left = "50%";
+                    }
+
+                    // do the scrolling taskbar thing
+                    function Scroll() {
+                        document.title =
+                            msg.substring(pos, msg.length) +
+                            space +
+                            msg.substring(0, pos);
+                        pos++;
+                        if (pos > msg.length) pos = 0;
+                        window.setTimeout("Scroll()", speed);
+                    }
+
+                    // sound activations
+                    function PlaySound(soundobj, volume) {
+                        var thissound = document.getElementById(soundobj);
+                        thissound.volume = volume;
+                        thissound.play();
+                    }
+
+                    function StopSound(soundobj) {
+                        var thissound = document.getElementById(soundobj);
+                        thissound.pause();
+                        thissound.currentTime = 0;
+                    }
+
+                    function MuteMusic() {
+                        Howler.mute(true);
+                        volumeButton.style.display = "none";
+                        volumeButton2.style.display = "block";
+                        localStorage["singularityVolume"] = 0;
+                    }
+
+                    function UnmuteMusic() {
+                        Howler.mute(false);
+                        volumeButton.style.display = "block";
+                        volumeButton2.style.display = "none";
+                        localStorage["singularityVolume"] = 50;
+                    }
+
+                    // music track showcase transition
+                    function moosicinout() {
+                        let moosicbar = document.getElementById("moosic"),
+                            id = null,
+                            val = 1;
+
+                        if (Dh > Dw) {
+                            //portrait
+                            moosicbar.style.transform =
+                                "translate(-56px, 75px)";
+                        } else if (Dh < Dw) {
+                            //landscape
+                            moosicbar.style.transform = "translate(-6px, 75px)";
+                        }
+
+                        setTimeout(() => {
+                            moosicbar.style.transition = "none";
+                        }, 5000);
+
+                        setTimeout(() => {
+                            clearInterval(id);
+                            id = setInterval(frame, 1);
+                            function frame() {
+                                if (val <= 0) {
+                                    clearInterval(id);
+                                    moosicbar.style.opacity = 0;
+                                    moosicbar.style.display = "none";
+                                } else {
+                                    val -= 0.001;
+                                    moosicbar.style.opacity = val;
+                                }
+                            }
+                        }, 8000);
+                    }
+
+                    // transition to main/ stuff
+                    function transition() {
+                        PlaySound("click", 0.75);
+
+                        Howler.volume(0);
+                        //speedUp();
+
+                        fade();
+
+                        setTimeout(() => {
+                            window.location.href = "/main";
+                        }, 12000);
+                        click.addEventListener("ended", function () {
+                            window.location.href = "/main";
+                        });
+                    }
+
+                    function fade() {
+                        let id = null;
+                        const elem = document.getElementById("fade2");
+                        elem.style.display = "block";
+                        let val = 0;
+                        clearInterval(id);
+                        id = setInterval(frame, 1);
+                        function frame() {
+                            if (val >= 1) {
+                                clearInterval(id);
+                                document.getElementById("ocean").style.display =
+                                    "none";
+                                document.getElementById(
+                                    "phrase"
+                                ).style.display = "none";
+                            } else {
+                                val += 0.002;
+                                elem.style.opacity = val;
+                            }
+                        }
+                    }
+
+                    // greeting time cycle/randomizer
+                    function getRandomInt(min, max) {
+                        min = Math.ceil(min);
+                        max = Math.floor(max);
+                        return Math.floor(Math.random() * (max - min) + min);
+                    }
+
+                    theCycle = setInterval(
+                        cycleGreet,
+                        getRandomInt(5000, 7000)
+                    );
+                    let g = 1;
+                    function cycleGreet() {
+                        if (g < fullGreets.length) {
+                            pcGreet.style.animation = "none";
+                            pcGreet.offsetHeight; /* trigger reflow */
+                            pcGreet.style.animation = null;
+                            pcGreet.innerHTML = fullGreets[g];
+
+                            mbGreet.style.animation = "none";
+                            mbGreet.offsetHeight; /* trigger reflow */
+                            mbGreet.style.animation = null;
+                            mbGreet.innerHTML = fullGreets[g];
+                            g++;
+                        } else {
+                            g = 0;
+                        }
+                    }
+
+                    // randomize the greetings
+                    pcGreet.innerHTML = randGreet;
+
+                    // personalized messages for special people / places
+                    function updateGreeting(ip, greetingsData) {
+                        let greetingMessage = randGreet;
+
+                        if (greetingsData.shinto.ip.includes(ip)) {
+                            greetingMessage = "hey there shinto!";
+                        } else if (ip === greetingsData.tehwoot.ip) {
+                            greetingMessage = "hai there tehwoot!";
+                        } else if (ip === greetingsData.zerdarus.ip) {
+                            greetingMessage =
+                                "I'm still counting the bottless on the wall!";
+                        } else if (ip === greetingsData.zippy.ip) {
+                            greetingMessage = "hey there zippy! :3";
+                        } else if (ip === greetingsData.janpro.ip) {
+                            greetingMessage = "Greetings, JAN-PRO!";
+                        } else if (ip === greetingsData.darius.ip) {
+                            greetingMessage = "Keep struggling, Tannius.";
+                        } else if (ip === greetingsData.lulycan.ip) {
+                            greetingMessage =
+                                "Machine, turn back now. The layers of this palace are not for your kind.";
+                        } else if (greetingsData.bossingmight.ip.includes(ip)) {
+                            greetingMessage = "I love you, master!";
+                        }
+
+                        randGreet = greetingMessage;
+                        pcGreet.innerHTML = greetingMessage || randGreet;
+                    }
+
+                    fetch("https://api.ipify.org/?format=json")
+                        .then((resp) => resp.json())
+                        .then((data) =>
+                            fetch("data.json")
+                                .then((u) => u.json())
+                                .then((datr) => {
+                                    updateGreeting(data.ip, datr);
+                                })
+                        );
+
+                    // do not enable zoom
+                    window.addEventListener(
+                        "wheel",
+                        function (event) {
+                            event.preventDefault();
+                        },
+                        { passive: false }
+                    );
+
+                    $(document).keydown(function (event) {
+                        if (
+                            event.ctrlKey == true &&
+                            (event.which == "61" ||
+                                event.which == "107" ||
+                                event.which == "173" ||
+                                event.which == "109" ||
+                                event.which == "187" ||
+                                event.which == "189")
+                        ) {
+                            event.preventDefault();
+                        }
+                        // 107 Num Key  +
+                        // 109 Num Key  -
+                        // 173 Min Key  hyphen/underscore key
+                        // 61 Plus key  +/= key
+                    });
+
+                    $(window).bind(
+                        "mousewheel DOMMouseScroll",
+                        function (event) {
+                            if (event.ctrlKey == true) {
+                                event.preventDefault();
+                            }
+                        }
+                    );
+
+                    Scroll();
+                    moosicinout();
+
+                    console.log(
+                        "%cHeya there! For those of you that are curious about the background, it's recorded footage from the title screen of TUNIC. The UI elements and the sword were modded out.",
+                        "display: block; padding:15px; border-radius: 10px; font-size:1.25em; border: #fff 1px solid; color:#fff;"
+                    );
+                </script>
+
+                <script src="main/date_events.js"></script>
+
+                <script>
+                    var fullGreets = [
+                        randGreet,
+                        secondGreet,
+                        "this place has a <em>long</em> way to go..",
+                        "so i hope you enjoy your stay here until then!",
+                        "click here to proceed!"
+                    ];
+                </script>
+            </audio>
+        </audio>
+        <div><span></span></div>
+    </body>
+</html>
